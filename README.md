@@ -10,4 +10,18 @@ What factors most heavily impact a political ad’s ability to gain impressions 
 
 ## Data Sources
 
-All data was extracted from Snap’s [database of its political advertisements in 2018.](https://www.snap.com/en-US/political-ads)
+All data was extracted from Snap’s [database of its political advertisements in 2018.](https://www.snap.com/en-US/political-ads) [This is the raw dataset.](https://github.com/vchen19/snapchat-2018-ad-impressions/blob/main/PoliticalAds.csv)
+
+## Methods
+
+### Single Linear Regression
+
+Single linear regression analysis was used to measure the relationship between ad spend in USD (independent variable) and number of impressions (dependent variable). All ad spend entries were converted to USD using nested IF statements. Then, impressions were plotted against ad spend. To attempt to improve the R-squared value, outliers in both ad spend and impressions were found using the [1.5 IQR rule](https://www.thoughtco.com/what-is-the-interquartile-range-rule-3126244#:~:text=Using%20the%20Interquartile%20Rule%20to%20Find%20Outliers&text=Multiply%20the%20interquartile%20range%20(IQR,this%20is%20a%20suspected%20outlier.&text=Any%20number%20less%20than%20this%20is%20a%20suspected%20outlier.). These entries were eliminated from the data and plotted in a separate graph. 
+
+### Multiple Linear Regression
+
+Multiple linear regression analysis was used to measure the impact that ad spend, time of ad run, and whether or not the ad was in the United States had on the number of impressions. To find the amount of time that the ad ran, the end date was subtracted from the start date (both columns had to be edited to remove the “Z” at the end using Excel’s SUBSTITUTE function). Ad entries were assigned a “1” if the Country Code was “united states” and “0” if the Country Code was not “united states”. The Regression tool in the Data Analytics add-on was used to determine how these factors impact impressions. 
+
+## Results
+
+
