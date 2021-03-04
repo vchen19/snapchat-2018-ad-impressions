@@ -1,4 +1,4 @@
-# Detailed methods
+# Detailed Methods
 
 1. Copy and paste relevant columns (Currency Code, Spend, Impressions, StartDate, EndDate, and CountryCode) in a new tab called “Relevant Columns.”
 
