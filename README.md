@@ -16,7 +16,7 @@ All data was extracted from Snap’s [database of its political advertisements i
 
 ### Single Linear Regression
 
-Single linear regression analysis was used to measure the relationship between ad spend in USD (independent variable) and number of impressions (dependent variable). All ad spend entries were converted to USD using nested IF statements. Then, impressions were plotted against ad spend. To attempt to improve the R-squared value, outliers in both ad spend and impressions were found using the [1.5 IQR rule](https://www.thoughtco.com/what-is-the-interquartile-range-rule-3126244#:~:text=Using%20the%20Interquartile%20Rule%20to%20Find%20Outliers&text=Multiply%20the%20interquartile%20range%20(IQR,this%20is%20a%20suspected%20outlier.&text=Any%20number%20less%20than%20this%20is%20a%20suspected%20outlier.). These entries were eliminated from the data and plotted in a separate graph. 
+Single linear regression analysis was used to measure the relationship between ad spend in USD (independent variable) and number of impressions (dependent variable). All ad spend entries were converted to USD using nested IF statements. Then, impressions were plotted against ad spend. To attempt to improve the R-squared value, outliers in both ad spend and impressions were found using the [1.5 IQR rule](https://www.thoughtco.com/what-is-the-interquartile-range-rule-3126244). These entries were eliminated from the data and plotted in a separate graph. 
 
 ### Multiple Linear Regression
 
