@@ -31,5 +31,5 @@ Even after the outliers were removed, the R-squared value for impressions vs. ad
 
 On the other hand, the multiple linear regression showed very low P-values (less than 0.05) when analyzing the impact of ad spend, time running, and country on impressions. This shows that increasing ad spend and amount of time running will increase impressions, while being in the United States will decrease impressions.
 
-This shows that we can predict impressions based on the equation __impressions = 108885.39 + 344.55*ad spend in USD + 4291.67*time running - 263180.76*whether or not US__.
+This shows that we can predict impressions based on the equation __impressions = 108885.39 + 344.55*(ad spend in USD) + 4291.67*(time running) - 263180.76*(whether or not US)__.
 
