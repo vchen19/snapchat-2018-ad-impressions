@@ -26,3 +26,8 @@ Multiple linear regression analysis was used to measure the impact that ad spend
 
 ![Single Linear Regression](https://github.com/vchen19/snapchat-2018-ad-impressions/blob/main/Single%20Linear%20Regression.png)
 ![Multiple Linear Regression](https://github.com/vchen19/snapchat-2018-ad-impressions/blob/main/Multiple%20Linear%20Regression.png)
+
+Even after the outliers were removed, the R-squared value for impressions vs. ad spend was only 0.6896, though there is visually a clear positive trend between the two variables. This shows that while ad spend may be important in predicting impressions, it does not tell the full story. 
+
+On the other hand, the multiple linear regression showed very low P-values (less than 0.05) when analyzing the impact of ad spend, time running, and country on impressions. This shows that increasing ad spend and amount of time running will increase impressions, while being in the United States will decrease impressions.
+
