@@ -25,3 +25,4 @@ Multiple linear regression analysis was used to measure the impact that ad spend
 ## Results
 
 ![Single Linear Regression](https://github.com/vchen19/snapchat-2018-ad-impressions/blob/main/Single%20Linear%20Regression.png)
+![Multiple Linear Regression](https://github.com/vchen19/snapchat-2018-ad-impressions/blob/main/Multiple%20Linear%20Regression.png)
