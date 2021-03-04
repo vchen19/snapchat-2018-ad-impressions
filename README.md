@@ -14,7 +14,7 @@ All data was extracted from Snap’s [database of its political advertisements i
 
 ## Methods
 
-More detailed methods are listed here. 
+More detailed methods are listed [here](https://github.com/vchen19/snapchat-2018-ad-impressions/blob/main/Detailed_methods.md). 
 
 ### Single Linear Regression
 
