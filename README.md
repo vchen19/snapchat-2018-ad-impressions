@@ -14,6 +14,8 @@ All data was extracted from Snap’s [database of its political advertisements i
 
 ## Methods
 
+More detailed methods are listed here. 
+
 ### Single Linear Regression
 
 Single linear regression analysis was used to measure the relationship between ad spend in USD (independent variable) and number of impressions (dependent variable). All ad spend entries were converted to USD using nested IF statements. Then, impressions were plotted against ad spend. To attempt to improve the R-squared value, outliers in both ad spend and impressions were found using the [1.5 IQR rule](https://www.thoughtco.com/what-is-the-interquartile-range-rule-3126244). These entries were eliminated from the data and plotted in a separate graph. 
@@ -32,4 +34,8 @@ Even after the outliers were removed, the R-squared value for impressions vs. ad
 On the other hand, the multiple linear regression showed very low P-values (less than 0.05) when analyzing the impact of ad spend, time running, and country on impressions. This shows that increasing ad spend and amount of time running will increase impressions, while being in the United States will decrease impressions.
 
 This shows that we can predict impressions based on the equation __impressions = 108885.39 + 344.55*(ad spend in USD) + 4291.67*(time running) - 263180.76*(whether or not US)__.
+
+## Discussion
+
+Multiple regression analysis shows that the amount of time that the ad runs and money spent on the ad have a positive impact on impressions, while the ad being from the United States appears to have a negative impact on impressions. This is useful for companies as proof that these factors have a significant impact on an ad’s success. The next steps would be to analyze more closely how these factors impact the number of impressions. For example, could it eventually be cost-ineffective to run an ad for too long? Additionally, the ads from this dataset are overwhelmingly from the United States, which could have led to skewed results in this category. In the future, it would be interesting to analyze data among all years so that the dataset is larger and the potential of the different sample sizes to skew the data is smaller.
 
