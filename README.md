@@ -39,3 +39,20 @@ This shows that we can predict impressions based on the equation __impressions =
 
 Multiple regression analysis shows that the amount of time that the ad runs and money spent on the ad have a positive impact on impressions, while the ad being from the United States appears to have a negative impact on impressions. This is useful for companies as proof that these factors have a significant impact on an ad’s success. The next steps would be to analyze more closely how these factors impact the number of impressions. For example, could it eventually be cost-ineffective to run an ad for too long? Additionally, the ads from this dataset are overwhelmingly from the United States, which could have led to skewed results in this category. In the future, it would be interesting to analyze data among all years so that the dataset is larger and the potential of the different sample sizes to skew the data is smaller.
 
+## *NEW* Python Analysis
+
+After analyzing political advertisement impressions on Snapchat using Excel, I performed a similar analysis in Python. By taking advantage of the enhanced visualization techniques available in Plotly, we are able to see the relationships between multiple variables in a single plot: 
+
+![Unzoomed Impressions](https://github.com/vchen19/snapchat-2018-ad-impressions/blob/main/Unzoomed%20Impressions.png)
+
+In this figure, it is difficult to see general trends because there are outliers. Plotly allows figures to be viewed dynamically, meaning that we can zoom in on the plot to get a better sense of what the trends are: 
+
+![Zoomed Impressions](https://github.com/vchen19/snapchat-2018-ad-impressions/blob/main/Zoomed%20Impressions.png)
+
+From this figure, it is a bit easier to make guesses about what the relationships between variables are. For example, it is more clear that there are larger bubbles in the upper portion of the graph, indicating that there could be a positive relationship between length of ad run and impressions. Additionally, there is a small cluster of red/orange bubbles that appear to sit above the line of best fit, indicating that there could be a positive relationship between whether or not an ad runs in Canada and the number of impressions. I tested this hypothesis with a multiple regression in Python: 
+
+![Python Multiple Regression](https://github.com/vchen19/snapchat-2018-ad-impressions/blob/main/Python%20Multiple%20Regression.png)
+
+Spend and time running predict impressions positively and strongly, as given by their positive coefficients and low p-values. While my guess that an ad that runs in Canada is likely to have more impressions seems to be reflected by its positive coefficient, its p-value is rather high at 0.483. This indicates to me that this correlation is not strong enough to say that there is definitively a relationship between an ad running in Canada and the number of impressions.
+
+Overall, there were several ways that Python was helpful in this analysis. It simplified some of the data cleaning by having a built-in function to drop data points with missing values. The dynamic viewing option of Plotly was very helpful, as you don't have to manually change axes and you can see the statistics of each data point by hovering over it. This is helpful for political campaigns to gain a general sense of what trends are outside of outliers. Importantly, Python allowed me to easily incorporate many variables into one plot with the size and color options. This is helpful for political campaigns that want to make hypotheses but don't know where to start. The ability to view multiple variables in one plot, compared to the ability to only view two variables in Excel, allows campaigns to make guesses about what factors might best increase impressions without having to run through the multiple regressions for all possible combinations of factors. With regards to the findings of this project, political campaigns might be able to use 
